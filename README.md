@@ -10,7 +10,14 @@
 
 ### Ответ
 
-![Скрин](https://github.com/Jlljully/terr04/blob/main/Untitled.png "1")
+![Скрин](https://github.com/Jlljully/terr05/blob/main/Untitled.png "1")
+
+![Скрин](https://github.com/Jlljully/terr05/blob/main/Untitled4.png "1")
+
+![Скрин](https://github.com/Jlljully/terr05/blob/main/Untitled3.png "1")
+
+![Скрин](https://github.com/Jlljully/terr05/blob/main/Untitled1.png "1")
+
 
 ------
 
@@ -25,7 +32,13 @@
 
 ### Ответ
 
+![Скрин](https://github.com/Jlljully/terr05/blob/main/Untitled8.png "1")
 
+![Скрин](https://github.com/Jlljully/terr05/blob/main/Untitled9.png "1")
+
+![Скрин](https://github.com/Jlljully/terr05/blob/main/Untitled10.png "1")
+
+![Скрин](https://github.com/Jlljully/terr05/blob/main/Untitled11.png "1")
 
 ------
 
