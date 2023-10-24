@@ -39,7 +39,7 @@
 
 ### Ответ
 
-https://github.com/Jlljully/terr04_push/pull/1
+https://github.com/Jlljully/terr04_push/pull/2
 
 ------
 
