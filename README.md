@@ -10,7 +10,7 @@
 
 ### Ответ
 
-
+![Скрин](https://github.com/Jlljully/terr04/blob/main/Untitled.png "1")
 
 ------
 
