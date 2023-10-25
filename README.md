@@ -70,7 +70,7 @@ https://github.com/Jlljully/terr04_push/pull/2
 ### Ответ
 
 
-		```hcl
+```hcl
   variable "iptest" {
     type          = string
     description   = "ip-адрес"
@@ -79,13 +79,12 @@ https://github.com/Jlljully/terr04_push/pull/2
         error_message = "Invalid IP address"
     }
 }
-
-		```
+```
 
 ![Скрин](https://github.com/Jlljully/terr05/blob/main/Untitled13.png "1")
 
   
-		```hcl
+```hcl
 variable "test_ip_list" {
     type          = list(string)
     description   = "список ip-адресов"
@@ -96,8 +95,7 @@ variable "test_ip_list" {
         error_message = "Invalid IP address"
     }
 }
-
-		```
+```
   
 ![Скрин](https://github.com/Jlljully/terr05/blob/main/Untitled14.png "1")
 
