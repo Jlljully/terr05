@@ -10,6 +10,8 @@
 
 ### Ответ
 
+Чеков находил только проблемы с версиями провайдеров, а тфлинт выдавал три типа ошибок: неправильая версия провайдера, неиспользуемые в коде переменные и в модуле с удаленного репозитория - ветка мейн:
+
 ![Скрин](https://github.com/Jlljully/terr05/blob/main/Untitled.png "1")
 
 ![Скрин](https://github.com/Jlljully/terr05/blob/main/Untitled4.png "1")
@@ -37,6 +39,8 @@
 ![Скрин](https://github.com/Jlljully/terr05/blob/main/Untitled9.png "1")
 
 ![Скрин](https://github.com/Jlljully/terr05/blob/main/Untitled10.png "1")
+
+Разлочить: terraform force unlock id-лока-из-ошибки :
 
 ![Скрин](https://github.com/Jlljully/terr05/blob/main/Untitled11.png "1")
 
@@ -67,14 +71,32 @@ https://github.com/Jlljully/terr04_push/pull/2
 
 
 		```hcl
-		
+  variable "iptest" {
+    type          = string
+    description   = "ip-адрес"
+    validation {
+        condition = can(regex("^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$",var.iptest))
+        error_message = "Invalid IP address"
+    }
+}
+
 		```
 
 ![Скрин](https://github.com/Jlljully/terr05/blob/main/Untitled13.png "1")
 
   
 		```hcl
-		
+variable "test_ip_list" {
+    type          = list(string)
+    description   = "список ip-адресов"
+    validation {
+        condition =  alltrue([
+        for i in var.test_ip_list : can(regex("^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$",i))
+        ])
+        error_message = "Invalid IP address"
+    }
+}
+
 		```
   
 ![Скрин](https://github.com/Jlljully/terr05/blob/main/Untitled14.png "1")
