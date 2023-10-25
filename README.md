@@ -40,7 +40,7 @@
 
 ![Скрин](https://github.com/Jlljully/terr05/blob/main/Untitled10.png "1")
 
-Разлочить: terraform force unlock id-лока-из-ошибки :
+Разлочить: terraform force-unlock id-лока-из-ошибки :
 
 ![Скрин](https://github.com/Jlljully/terr05/blob/main/Untitled11.png "1")
 
@@ -102,52 +102,4 @@ variable "test_ip_list" {
 ![Скрин](https://github.com/Jlljully/terr05/blob/main/Untitled14.png "1")
 
 ------
-
-
-## Дополнительные задания (со звёздочкой*)
-
-**Настоятельно рекомендуем выполнять все задания со звёздочкой.** Их выполнение поможет глубже разобраться в материале.   
-Задания со звёздочкой дополнительные, не обязательные к выполнению и никак не повлияют на получение вами зачёта по этому домашнему заданию. 
-
-### Ответ
-
-------
-
-### Задание 5*
-1. Напишите переменные с валидацией:
-- type=string, description="любая строка" — проверка, что строка не содержит символов верхнего регистра;
-- type=object — проверка, что одно из значений равно true, а второе false, т. е. не допускается false false и true true:
-```
-variable "in_the_end_there_can_be_only_one" {
-    description="Who is better Connor or Duncan?"
-    type = object({
-        Dunkan = optional(bool)
-        Connor = optional(bool)
-    })
-
-    default = {
-        Dunkan = true
-        Connor = false
-    }
-
-    validation {
-        error_message = "There can be only one MacLeod"
-        condition = <проверка>
-    }
-}
-```
-
-### Ответ
-
-
-
-------
-
-### Задание 6*
-
-1. Настройте любую известную вам CI/CD-систему. Если вы ещё не знакомы с CI/CD-системами, настоятельно рекомендуем вернуться к этому заданию после изучения Jenkins/Teamcity/Gitlab.
-2. Скачайте с её помощью ваш репозиторий с кодом и инициализируйте инфраструктуру.
-3. Уничтожьте инфраструктуру тем же способом.
-
-### Ответ
 
